@@ -1,4 +1,8 @@
 def check_balance(list_):
+    '''Returns true if all the parentheses are True. Reurns true for empty list'''
+
+    if len(list_) == 0:
+        return True
     
     stack = []
     
@@ -14,5 +18,8 @@ def check_balance(list_):
         elif temp == ']':
             if stack.pop() != '[':
                 return False
+        
     return True
             
+
+
